@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+}
+
+.container {
+  width: 90%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 4%;
+  background-color: #ffffff;
+
+  z-index: 6;
+  transition: transform 0.2s;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: fixed;
+  border-radius: 0 0 10px 10px;
+}
+
+/* .navbar:hover {
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 15px 15px 15px 15px;
+} */
+#pic {
+  height: 50px;
+  width: 200px;
+  padding-top: 4px;
+  position: relative;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 90px;
+}
+#blg {
+  margin-right: 200px;
+}
+#cont {
+  margin-right: -90px;
+}
+.nav-elements ul a {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 25px;
+  line-height: 5em;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+  font-style: bold;
+}
+
+.nav-elements ul a.active {
+  color: #03789f;
+  font-weight: 450;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
