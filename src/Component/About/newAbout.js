@@ -1,10 +1,9 @@
 import "./stylesAbout.css";
+import "../BlogPost/styles.css";
 // import Post from "./post";
 import React from "react";
 import { useState } from "react";
-
 import main from "../images/Business-merger.svg";
-
 import mission from "../images/mission.svg";
 import vision from "../images/vision.png";
 import objective from "../images/objective.png";
@@ -68,10 +67,10 @@ export default function Blog() {
       <br />
       <h1>Meet Our Team<br/><img src={bar} alt="bar"/></h1>
         <div className="student">
-        <button type="button" onClick={handleClick} name ="W" class="btn btn-outline-primary">Web D Team</button>
-        <button type="button" onClick={handleClick} name="D" class="btn btn-outline-primary">Design Team</button>
-        <button type="button" onClick={handleClick} name="C" class="btn btn-outline-primary">Content Team</button>
-        <button type="button" onClick={handleClick} name="E" class="btn btn-outline-primary">Events Team</button>
+        <button type="button" onClick={handleClick} name ="W" class="btn btn-light button-me">Web D Team</button>
+        <button type="button" onClick={handleClick} name="D" class="btn btn-light button-me">Design Team</button>
+        <button type="button" onClick={handleClick} name="C" class="btn btn-light button-me">Content Team</button>
+        <button type="button" onClick={handleClick} name="E" class="btn btn-light button-me">Events Team</button>
         <div className="team">
           {data1.map((ele) => (
             <img

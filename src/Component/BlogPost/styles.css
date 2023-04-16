@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 100px;
+  /* margin-left: ; */
   text-align: justify;
   width: 40%;
 }
@@ -42,12 +42,10 @@ body {
 }
 .post {
   margin: 40px 75px;
-
   width: 350px;
   display: flex;
   flex-direction: column;
   padding: 0 10px 0 10px;
-
   border-radius: 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 50px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
@@ -123,8 +121,6 @@ span {
   transition: 0.3s;
 }
 .postImage {
-  width: 500px;
-  height: 100%;
 }
 .modalContent {
   text-align: justify;
